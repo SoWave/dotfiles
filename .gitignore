@@ -1,0 +1,11 @@
+.config/copyq
+.config/dconf
+.config/dolphinrc
+.config/gtk-3.0
+.config/kde.org
+.config/kitty
+.config/pulse
+.config/session
+.config/nvim/lazy-lock.json
+.config/nvim/undodir/
+.config/systemd/*

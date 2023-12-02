@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+swaylock --screenshots --indicator --clock \
+ --indicator-radius 80 \
+ --indicator-thickness 5 \
+ --effect-blur 10x7 \
+ --effect-vignette 0.2:0.2 \
+ --ring-color 11111b \
+ --line-color 313244 --inside-color 0011111b --separator-color 00000000 --fade-in 0.1 &
