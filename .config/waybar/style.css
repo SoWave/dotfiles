@@ -3,25 +3,24 @@
     font-family: Font Awesome, Roboto, Arial, sans-serif;
     font-size: 13px;
     color: #ffffff;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 window {
-	/*font-weight: bold;*/
 }
 window#waybar {
     background: rgba(0, 0, 0, 0);
+    border: 10px;
 }
 /*-----module groups----*/
 .modules-right {
-	background-color: rgba(0,0,0,0.5);
-    margin: 2px 10px 0 0;
+    background: rgba(0, 0, 0, 0.2);
+    margin-right: 10px;
 }
 .modules-center {
 }
 .modules-left {
-    margin: 2px 0 0 5px;
-    padding: 0;
+    margin-left: 10px;
 }
 /*-----modules indv----*/
 #workspaces button {
@@ -48,6 +47,7 @@ window#waybar {
 #tray,
 #mode,
 #custom-power,
+#custom-spotify,
 #custom-menu,
 #idle_inhibitor {
     padding: 0 6px;
@@ -55,12 +55,6 @@ window#waybar {
 #mode {
     color: #cc3436;
     font-weight: bold;
-}
-#custom-power {
-    background-color: rgba(0,119,179,0.6);
-    border-radius: 100px;
-    margin: 5px 5px;
-    padding: 1px 1px 1px 6px;
 }
 /*-----Indicators----*/
 #idle_inhibitor.activated {
@@ -80,6 +74,12 @@ window#waybar {
 }
 #temperature.critical {
     color: #cc3436;
+}
+#custom-power {
+    margin-right: 6px;
+}
+#custom-soptify {
+    margin-left: 6px;
 }
 /*-----Colors----*/
 /*

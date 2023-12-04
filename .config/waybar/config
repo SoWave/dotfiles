@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["custom/spotify", "tray", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "battery", "clock"],
+    "modules-right": ["custom/spotify", "tray", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "battery", "clock", "custom/power"],
     // Modules configuration
     "hyprland/workspaces": {
         "disable-scroll": true,
@@ -29,10 +29,18 @@
     },
     "cpu": {
         "format": "{usage}% ",
-        "tooltip": false
+        "tooltip": false,
+        "on-click": "foot -T 'btop' sh -c 'btop'"
     },
     "memory": {
-        "format": "{}% "
+        "format": "{}% ",
+        "tooltip": false,
+        "on-click": "foot -T 'btop' sh -c 'btop'"
+    },
+    "temperature": {
+        "format": "{}°",
+        "tooltip": false,
+        "on-click": "foot -T 'btop' sh -c 'btop'"
     },
     "backlight": {
         "format": "{icon}",
@@ -75,6 +83,11 @@
         "exec": "~/.config/waybar/modules/spotify.sh",
         "exec-if": "pgrep spotify",
         "escape": true
+    },
+    "custom/power": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "~/.config/waybar/modules/power.sh"
     }
 }
 

@@ -9,3 +9,6 @@
 .config/nvim/lazy-lock.json
 .config/nvim/undodir/
 .config/systemd/*
+.config/QtProject.conf
+.config/VirtualBox/
+.config/spotify/*
